@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+    
+
+}
+body{
+    background: #0c1022;
+    color: #fff;
+    
+}
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    /* background: indianred; */
+    background: linear-gradient(60deg, #fc4,rgb(209, 106, 180), #3cf);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: #000;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    /* top: 10px; */
+    margin-left: 0;
+    background-size: contain;
+    background-image: url("logo.png");
+    border-radius: 50%;
+    pointer-events: none;
+    border: 2px solid black;
+}
+.heading{
+}
+.heading  a {
+     font-size: 18px;
+     text-decoration: none;
+     color: #fff;
+     font-weight: 500;
+     margin-left: 40px;
+}
+.heading  a:hover{
+    transition-duration: 1s;
+    font-weight: 400;
+    background-clip: border-box;
+    box-shadow: 0px 0px 23px 0px rgb(59, 30, 165);
+    /* font-variant: small-caps; */
+
+}
+ 
+.Contact-btn:active{
+    background: linear-gradient(45deg,yellow, rgb(12, 55, 156), rgb(218, 35, 163));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+
+}
+.resume-btn:active{
+    background: linear-gradient(45deg,yellow, rgb(12, 55, 156), rgb(218, 35, 163));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+
+}
+.About{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%  0;
+    scroll-behavior: smooth;
+
+}
+.About-details {
+ max-width: 50%;
+}
+.About-details h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.About-details h3{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+
+.About-details p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0 40px;
+    letter-spacing: 1px;
+    
+}    
+
+.Contact-btn {
+    width: 180px;
+    height: 48px;
+    background: linear-gradient(60deg, #fc4,rgb(209, 106, 180), #3cf);
+    font-size: 19px;
+    color: #000;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.profile {
+    width: 400px;
+    height: 400px;
+    
+}
+.profile .profile-in{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(60deg, #cda331,rgb(216, 59, 172), #3cf);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .profile-in::after{
+    content: '';
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    background: #0c1022;
+    border-radius: 50%;
+    
+}
+ .profile-in .image{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background-color: #fc4;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    
+    
+ } 
+ .image img{
+     position:absolute;
+     left: 50%;
+     top: 0px;
+     transform:translateX(-50%) ;
+     max-width: 450px;
+     object-fit: cover;
+ 
+ } 
+ .skills{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%  0;
+ }
+ .skills .skillsimg{
+    position: relative;
+    top: 40px;
+    height: 50vh;
+    width: 50%;
+    background-image: url("skills1.jfif");
+    background-size: cover;
+    border-radius: 20px;
+ }
+ .skills-details{
+    left: 100px;
+    max-width: 80%;
+ }
+.skills-details h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 2;
+}
+    
+.skills-details  li{
+    height: 50px;
+    width: 270px;
+    text-align: center;
+    border: 2px solid black;
+    background: linear-gradient(45deg,yellow, rgb(196, 59, 180), #3cf);
+    border-radius: 30px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    list-style-type:none;
+ 
+}
+.skills-details  li:hover{
+    font-size: 40px;
+    transition-duration: .6s;
+    color: #0c1022;
+    font-weight: 800;
+    /* background: transparent; */
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.projects{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%  0;
+}
+.projects .csp{
+    max-width: 50%;
+}
+.projects .csp h1{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1px;
+
+}
+.projects .csp h2{
+       margin-bottom: 5px;
+       color: coral;
+}
+.projects .csp p{
+    margin-top: 10px;
+}
+.projects .cspimg{
+    height: 340px;
+    width: 420px;
+    position: relative;
+    top: 50px;
+    background-image: url("pro4.jfif");
+    background-size: contain;
+    border-radius: 20px;
+    
+}
+.achievements{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%  0;
+}
+.achievements #achieveimg{
+    height: 70%;
+    width: 1152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.achievements #achieveimg h1{
+    position: relative;
+    max-width: 40%;
+    width: 600px;
+    height: 50vh;
+    top: 60px;
+    font-size: 46px;
+    padding-top: 150px;
+    margin-left: 100px;
+    
+}
+
+
+.achievements #achieveimg div{
+   
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 500px;
+    background-image: url("achive2.jfif");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 151px;
+}
+.achieve {
+    width: 1250px;
+    height: 600px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.achieve div{
+    height: 65%;
+    width: 30%;
+    border-radius: 20px;
+    border: 3px solid rgb(58, 196, 227);
+    box-sizing: border-box;
+    
+}
+.achieve div:hover{
+    transition-duration: 1s;
+    box-shadow: 0px 0px 23px 0px rgb(169 209 209);
+
+}
+
+.achieve .div1 img{
+     height: 60%;
+     width: 100%;
+     border-radius: 20px;
+}    
+.achieve .div1 p{
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.achieve .div2 img{
+    height: 60%;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.achieve .div2 p{
+    text-align: center;
+    border-radius: 20px;
+}
+.achieve .div3 img{
+    height: 60%;
+    width: 100%;
+    border-radius: 20px;
+}
+.achieve .div3 p{
+    text-align: center;
+    border-radius: 20px;
+}
+.contactme{
+    scroll-behavior: smooth;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 10%  0;
+    /* border: 2px solid red; */
+    top: 400px;
+}
+.contactme .contact-details{
+    height: 70%;
+    max-width: 50%;
+    /* border: 2px solid red; */
+    padding-top: 50px;
+    text-align: start;
+    font-size: 25px;
+    
+}
+ .contactme img{
+    position: relative;
+    bottom: 20px;
+    height: 90%;
+    width: 450px;
+    /* box-sizing: border-box;
+    box-shadow: 0px  0px 23px 0px rgb(89, 193, 225); */
+    /* border: 3px solid rgb(73, 176, 202) ; */
+    border-radius: 20px;
+
+ } 
+ .contactme .contact-details p{
+        margin-bottom: 30px;
+        font-size: 20px;
+ }
+ .resume-btn {
+    width: 180px;
+    height: 48px;
+    background: linear-gradient(60deg, #fc4,rgb(209, 106, 180), #3cf);
+    font-size: 19px;
+    color: #000;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#resume{
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 500px;
+
+    height: 100%;
+    /* width: 50%; */
+    
+}
+.lightbox{
+    display: none;
+    /* visibility: hidden; */
+    position: relative;
+    z-index: 104;
+    height: 100vh;
+    width: 100vw;
+    background-color:transparent;
+    backdrop-filter: blur(18px);
+}
+.lightbox  a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: larger;
+    position: relative;
+    left: 1400px;
+}
+.lightbox:target {
+    display: block;
+    /* visibility: visible; */
+}
